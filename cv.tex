@@ -1,17 +1,18 @@
-%format this document using pdflatex
-\NeedsTeXFormat{LaTeX2e}
-
+%the class for CVs
 \documentclass[english]{curve}
-\usepackage[english]{babel}
+
+%wider margins
 \usepackage[a4paper,nohead,nofoot,hmargin=1.5cm,vmargin=1.5cm]{geometry}
+
+% support for extra chars
 \usepackage[latin1]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{graphicx}
-\usepackage{color}
+
 %used for dingbats(generic simbols)
 \usepackage{pifont}
+
 %package for longer comments
-\usepackage{verbatim}
+%\usepackage{verbatim}
+
 %package for links in pdfs
 \usepackage[pdftex]{hyperref}
 \hypersetup{
@@ -21,7 +22,6 @@
     linkcolor=blue,%
     urlcolor=blue
 }
-%\usepackage{xr}
 
 \photo[r]{image.jpg}
 \photoscale{0.2}
@@ -30,9 +30,10 @@
     Eduardo Bellani \\
 %    27/02/1984 \\
     Brazil - SC - Florianópolis \\
-    \ding{38} +55 4896080745 \\
+    \ding{38} +55 48 96080745 \\
     \ding{37} skype: eduardo.bellani \\
-    \ding{41} \href{mailto:ebellani@gmail.com}{ebellani@gmail.com} \\
+    \ding{41} \href{mailto:ebellani@gmail.com}{email} \\
+    \ding{46} \href{http://www.cnxs.com.br}{blog} 
 }
 \rightheader{~}
 
