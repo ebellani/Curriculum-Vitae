@@ -1,0 +1,83 @@
+%format this document using pdflatex
+\NeedsTeXFormat{LaTeX2e}
+
+\documentclass[english]{curve}
+\usepackage[english]{babel}
+\usepackage[a4paper,nohead,nofoot,hmargin=1.5cm,vmargin=1.5cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{color}
+%used for dingbats(generic simbols)
+\usepackage{pifont}
+%package for longer comments
+\usepackage{verbatim}
+%package for links in pdfs
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=blue,%
+    filecolor=blue,%
+    linkcolor=blue,%
+    urlcolor=blue
+}
+%\usepackage{xr}
+
+\photo[r]{image.jpg}
+\photoscale{0.2}
+
+\leftheader{
+    Eduardo Bellani \\
+%    27/02/1984 \\
+    Brazil - SC - Florianópolis \\
+    \ding{38} +55 4896080745 \\
+    \ding{37} skype: eduardo.bellani \\
+    \ding{41} \href{mailto:ebellani@gmail.com}{ebellani@gmail.com} \\
+}
+\rightheader{~}
+
+\titlefont{
+    \fontfamily{pag}\selectfont\bfseries\Huge
+}
+\title{
+    Software Developer \& Epistemologist
+}
+
+\subtitlefont{\fontfamily{pag}\selectfont\itshape\Large}
+\subtitle{Curriculum Vitae}
+\rubricfont{\fontfamily{pag}\selectfont\bfseries\Large}
+\subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\Large}
+\keyfont{\fontfamily{pag}\selectfont\bfseries}
+
+
+\prefix{\ding{229}}
+
+%\setlength\subrubricspace{1pt}
+
+
+\makeatletter
+\def\@@rubrichead#1{
+    \@rubricfont
+    \makebox[0pt][l]{
+        \colorbox[rgb]{0.95,0.39,0.0}{\makebox[\@almosttextwidth-6\fboxsep]{}}
+    }
+    \makebox[\@almosttextwidth-2\fboxsep][c]{#1}\par\vspace\rubricspace
+}
+\makeatother
+
+\begin{document}
+
+    \makeheaders[t]
+    \maketitle
+
+    \makerubric{open_source}
+    \makerubric{tech_competence}
+    \makerubric{references}
+    \makerubric{professional_experience}
+    \makerubric{interests}
+    \makerubric{education}
+    \makerubric{miscellaneous}
+
+\end{document}
+
+%% cv.tex ends here.
