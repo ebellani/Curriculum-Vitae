@@ -1,3 +1,6 @@
+
+\NeedsTeXFormat{LaTeX2e}
+
 %the class for CVs
 \documentclass[english]{curve}
 
@@ -25,8 +28,8 @@
     urlcolor=blue
 }
 
-\photo[r]{image.jpg}
-\photoscale{0.2}
+\photo[r]{images/me.jpg}
+\photoscale{0.15}
 
 \leftheader{
     Eduardo Bellani \\
@@ -39,34 +42,15 @@
 }
 \rightheader{~}
 
-\titlefont{
-    \fontfamily{pag}\selectfont\bfseries\Huge
-}
+% several little mods, on the font, little orange boxes in the rubrics, etc
+\include{customize_curve}
+
 \title{
     Software Artisan \& Epistemologist
 }
 
-\subtitlefont{\fontfamily{pag}\selectfont\itshape\Large}
 \subtitle{Curriculum Vitae}
-\rubricfont{\fontfamily{pag}\selectfont\bfseries\Large}
-\subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\Large}
-\keyfont{\fontfamily{pag}\selectfont\bfseries}
 
-
-\prefix{\ding{229}}
-
-%\setlength\subrubricspace{1pt}
-
-
-\makeatletter
-\def\@@rubrichead#1{
-    \@rubricfont
-    \makebox[0pt][l]{
-        \colorbox[rgb]{0.95,0.39,0.0}{\makebox[\@almosttextwidth-6\fboxsep]{}}
-    }
-    \makebox[\@almosttextwidth-2\fboxsep][c]{#1}\par\vspace\rubricspace
-}
-\makeatother
 
 \begin{document}
 
@@ -75,8 +59,8 @@
 
     \makerubric{open_source}
     \makerubric{tech_competence}
-    \makerubric{references}
     \makerubric{professional_experience}
+    \makerubric{references}
     \makerubric{interests}
     \makerubric{education}
     \makerubric{miscellaneous}
