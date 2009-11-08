@@ -1,0 +1,29 @@
+\titlefont{
+    \fontfamily{pag}\selectfont\bfseries\Huge
+}
+
+\subtitlefont{\fontfamily{pag}\selectfont\itshape\Large}
+
+
+\rubricfont{\fontfamily{pag}\selectfont\bfseries\Large}
+
+\subrubricfont{\fontfamily{pag}\selectfont\bfseries\itshape\Large}
+
+\keyfont{\fontfamily{pag}\selectfont\bfseries}
+
+
+\prefix{\ding{229}}
+
+%\setlength\subrubricspace{1pt}
+
+
+\makeatletter
+\def\@@rubrichead#1{
+    \@rubricfont
+    \makebox[0pt][l]{
+        \colorbox[rgb]{0.95,0.39,0.0}{\makebox[\@almosttextwidth-6\fboxsep]{}}
+    }
+    \makebox[\@almosttextwidth-2\fboxsep][c]{#1}\par\vspace\rubricspace
+}
+\makeatother
+
