@@ -1,17 +1,20 @@
 
+%needs this so it behaves better
 \NeedsTeXFormat{LaTeX2e}
 
 %the class for CVs
 \documentclass[english]{curve}
 
 %wider margins
-\usepackage[a4paper,nohead,nofoot,hmargin=1.5cm,vmargin=1.5cm]{geometry}
+\usepackage[a4paper,nohead,nofoot,hmargin=1.5cm,vmargin=1cm]{geometry}
 
 % support for extra chars
 \usepackage[latin1]{inputenc}
 
-%used for dingbats(generic simbols)
+%used for dingbats(generic symbols)
 \usepackage{pifont}
+
+%used for the smiley icon
 \usepackage{wasysym}
 
 
@@ -65,7 +68,6 @@
     \makerubric{references}
     \makerubric{interests}
     \makerubric{education}
-    \makerubric{miscellaneous}
     \makerubric{books}
 
 \end{document}
