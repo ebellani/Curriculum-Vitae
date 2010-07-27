@@ -3,7 +3,9 @@
 \NeedsTeXFormat{LaTeX2e}
 
 %the class for CVs
-\documentclass[english]{curve}
+\documentclass[english]{article}
+
+\usepackage{curve}
 
 %wider margins
 \usepackage[a4paper,nohead,nofoot,hmargin=1.5cm,vmargin=1cm]{geometry}
@@ -60,8 +62,8 @@
 
 \begin{document}
 
-    \makeheaders[t]
     \maketitle
+    \makeheaders[t]
 
     \makerubric{open_source}
     \makerubric{tech_competence}
