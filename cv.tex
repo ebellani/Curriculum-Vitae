@@ -3,9 +3,9 @@
 \NeedsTeXFormat{LaTeX2e}
 
 %the class for CVs
-\documentclass[english]{article}
+\documentclass[english]{curve}
 
-\usepackage{curve}
+%\usepackage{curve}
 
 %wider margins
 \usepackage[a4paper,nohead,nofoot,hmargin=1.5cm,vmargin=1cm]{geometry}
@@ -54,23 +54,20 @@
 % several little mods, on the font, little orange boxes in the rubrics, etc
 \include{customize_curve}
 
-\title{
-    Software Artisan \& Interdisciplinary Connector
-}
+\title{ Software Artisan \& Interdisciplinary Connector }
 
 \subtitle{Curriculum Vitae}
 
 
 \begin{document}
 
-    \maketitle
     \makeheaders[t]
+    \maketitle
 
     \makerubric{open_source}
+
     \makerubric{tech_competence}
     \makerubric{professional_experience}
-    % I have to update these
-    %\makerubric{references}
     \makerubric{interests}
     \makerubric{education}
 %    \makerubric{personal_note}
