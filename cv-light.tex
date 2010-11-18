@@ -1,3 +1,4 @@
+
 %needs this so it behaves better
 \NeedsTeXFormat{LaTeX2e}
 
@@ -8,14 +9,13 @@
 \usepackage[a4paper,nohead,nofoot,hmargin=1.5cm,vmargin=1cm]{geometry}
 
 % support for extra chars
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 
 %used for dingbats(generic symbols)
 \usepackage{pifont}
 
 %used for the smiley icon
 \usepackage{wasysym}
-
 
 %package for longer comments
 %\usepackage{verbatim}
@@ -33,17 +33,14 @@
 }
 
 \photo[r]{images/me_new.jpg}
-\photoscale{0.10}
+\photoscale{0.08}
 
 \leftheader{
     Eduardo Bellani \\
-%   Age?    
-%    27/02/1984 \\
-    Brazil - SC - Florianópolis \\
+    Brazil - SC - FlorianÃ³polis \\
     \ding{38} +55 48 96080745 \\
     \ding{37} skype: eduardo.bellani \\
     \ding{41} \href{mailto:ebellani@gmail.com}{email} \\
-% offline    
     \ding{46} \href{http://contemplative-bonobo.blogspot.com/}{blog} 
 }
 \rightheader{~}
@@ -51,9 +48,9 @@
 % several little mods, on the font, little orange boxes in the rubrics, etc
 \include{customize_curve}
 
-\title{ Software Artisan \& Interdisciplinary Connector }
+%\title{ Software Artisan }
 
-\subtitle{Curriculum Vitae}
+\subtitle{Programmer}
 
 
 \begin{document}
@@ -61,13 +58,9 @@
     \makeheaders[t]
     \maketitle
 
+    \makerubric{personal_note}
     \makerubric{open_source}
 
     \makerubric{tech_competence}
     \makerubric{professional_experience}
-    \makerubric{interests}
-    \makerubric{education}
-%    \makerubric{personal_note}
-    \makerubric{books}
-
 \end{document}
